@@ -1,7 +1,7 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
-from .forms import RegisterForm  # , CreateUserForm
+from .forms import RegisterForm, PostForm  # , CreateUserForm
 
 
 # Create your views here.
@@ -34,4 +34,10 @@ def create_new(request):
 
 
 def home_view(request):
-    return render(request, "home.html")
+    form = PostForm()
+    if request.method == 'POST':
+        form = PostForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+    return render(request, "home.html", {"form": form})
