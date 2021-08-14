@@ -5,6 +5,6 @@ from django.db import models
 
 class Post(models.Model):
     username = models.CharField(max_length=50)
-    text = models.CharField(max_length=100)
-    created_at = models.CharField(max_length=50)
-    updated_at = models.CharField(max_length=50)
+    text = models.TextField()
+    created_at = models.DateTimeField()
+    updated_at = models.DateTimeField()
