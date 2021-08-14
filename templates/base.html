@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-{#	<img class="wave" src="{% static '/img/wave.png' %}" >#}
+
 	<div class="container">
 		<div class="img">
 			<img src="{% static '/img/bg.svg' %}">
@@ -37,7 +37,7 @@
            		    	<input type="password" class="input" name="password">
             	   </div>
             	</div>
-{#            	<a class="forgot_pass" href="{% url 'forgot_pass' %}">Forgot Password?</a>#}
+
                 <a class="create_new" href="{% url 'create_new' %}">Create New Account</a>
             	<input type="submit" class="btn" value="Login">
                 {% for message in messages %}

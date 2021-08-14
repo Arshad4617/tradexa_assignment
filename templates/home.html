@@ -100,19 +100,19 @@
 
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+								<span class="input-group-text"><i class="fas fa-pen-alt"></i></span>
 							</div>
 							{{ form.text }}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-key"></i></span>
+								<span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
 							</div>
 							{{ form.created_at }}
 						</div>
                         <div class="input-group mb-2">
 							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-key"></i></span>
+								<span class="input-group-text"><i class="fas fa-calendar-week"></i></span>
 							</div>
 							{{ form.updated_at }}
 						</div>
@@ -126,11 +126,6 @@
 					</form>
 				</div>
                 {{ form.errors }}
-				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						 <a href="{% url 'home' %}" class="ml-2">Show created posts</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
